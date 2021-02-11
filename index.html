@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Danielle H. | HTML & CSS Specialist</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Style Sheets -->
+        <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+        <!-- JS file -->
+        <script src="js/index.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <!-- 'logo' -->
+            <a href="#home">DH</a>
+
+            <!-- navigation -->
+            <nav>
+                <img class="navIcon" src="assets/menu.svg" alt="menu icon">
+                <!-- navigation that shows on bigger screens when the menu icon is not present -->
+                <div class="navCont">
+                    <a href="#home">Home</a>
+                    <a href="#resume">Resume</a>
+                    <a href="#projects">Projects</a>
+                    </div>
+            </nav>
+        </header>
+        <!-- navigation that shows when menu icon is clicked -->
+        <div class="navLinks">
+            <a href="#home">Home</a>
+            <a href="#resume">Resume</a>
+            <a href="#projects">Projects</a>
+            </div>
+        
+        <!-- home section -->
+        <section id="home">
+                <div class="homeCont">
+                    <h1>Hello, my name is Danielle</h1>
+                    <p>and I am a HTML & CSS Specialist</p>
+                    <a href ="#projects">Checkout my work</a>
+                </div>
+                    <img src="assets/girlwork.svg" alt='girl working on computer'>
+                    <div class="scroll">
+                        <p>scroll down</p>
+                        <img src="assets/arrowdown.svg" alt="arrow down">
+                    </div>
+        </section>
+
+        <!-- Resume section -->
+        <section id="resume">
+                    <h2>Resume</h2>
+                    <!-- Resume summary & education -->
+                    <div class='resume'>
+                        <p>Enthusiastic HTML and CSS Specialist eager to contribute to team success through 
+                        hard work, attention to detail, and excellent organizational skills. 
+                        Clear understanding of industry standards and practices with 
+                        extensive practice in use of HTML and CSS/SCSS. 
+                        Motivated to learn, grow, and excel in the field of web development.</p>
+                        <p class='resumeEducation'>
+                            <span>Education</span>
+                            University of California, Irvine <br>
+                            B.A. in Psychology and Social Behavior (2019)
+                    </p>
+                    </div>
+
+                    <!-- Resume skills section -->
+                    <div class="skillsCont">
+                    <p class='skillsHead'>Skills</p>
+                       <div class='skills'>
+                        <p> HTML </p>
+                        <p> CSS </p>
+                        <p> SCSS </p>
+                        <p> JAVASCRIPT </p>  
+                        <p> BOOTSTRAP </p>
+                        <p>GULP</p>
+                    </div> 
+                    </div>
+        </section>
+
+        <!-- Projects section -->
+        <section id="projects">
+            <h3>Projects</h3>
+
+        <!-- Project 1: Chooserz website -->
+        <div class='projectItem'>
+            <a href=""><img src="assets/chooserzimg.png"  alt="chooserz website screenshot"></a>
+            <div>
+                <p><span>Chooserz</span>
+                    Chooserz is a simple, fun website with many random generators. 
+                    This website was created with HTML, CSS/SCSS, and Javascript. Chooserz makes extensive use of 
+                    CSS Grid and Flexbox.</p>
+            </div>
+        </div>
+
+        <!-- Project 2: Clothing.co website -->
+        <div  class='projectItem projectItem2'>
+            <a href=""><img src="assets/clothingimg.png"  alt="website screenshot"></a>
+            <div>
+                <p><span>Clothing Co.</span>
+                    Clothing Co. is a mock ecommerce site based off of an idea I had. 
+                    This website was also developed using HTML, CSS/SCSS, and Javascript. It was 
+                    developed using Gulp and illustrates the extensive use of CSS Flexbox. </p>
+            </div>
+        </div>
+
+        <!-- Project 3: Landing Page based off of Figma's free ui template "Landie" -->
+        <div  class='projectItem'>
+            <a href=""><img src="assets/landingpageimg.png"  alt="website screenshot"></a>
+            <div>
+                <p><span>Landing Page</span>
+                This landing page is based off of Figma's free landing page UI kit. 
+                The website was also created using HTML, CSS, SCSS, Javascript, and Gulp. Furthermore, 
+                this wesite, along with the others, was developed with a mobile-first approach to 
+                create responsive websites.</p>
+            </div>
+        </div>
+        </section>
+
+        <!-- Nothing in footer -->
+        <footer>
+        </footer>
+    </body>
+</html>

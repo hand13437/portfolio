@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="13px" viewBox="0 0 23 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path</title>
+    <defs>
+        <filter x="-8.8%" y="-42.9%" width="117.6%" height="185.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mobile-whole" transform="translate(-217.000000, -201.000000)">
+            <rect id="Rectangle" fill="#F8F8F8" x="0" y="0" width="360" height="2492"></rect>
+            <g id="Group-2" transform="translate(74.000000, 107.000000)">
+                <g id="Group-3" filter="url(#filter-1)" transform="translate(41.000000, 84.440000)">
+                    <rect id="Rectangle" fill="#6FB3B8" x="-4.26325641e-14" y="4.08562073e-14" width="135.08" height="27.28" rx="13.64"></rect>
+                    <path d="M117.752729,16.7555762 C117.66009,16.8482122 117.66009,16.9979462 117.752729,17.0905822 C117.79893,17.1367818 117.859583,17.16 117.920237,17.16 C117.98089,17.16 118.041544,17.1367818 118.087745,17.0905822 L120.930639,14.2477695 C120.952674,14.2259728 120.969969,14.1996746 120.982053,14.1705334 C121.005982,14.1127247 121.005982,14.0475715 120.982053,13.9895259 C120.969969,13.9603846 120.952437,13.9340864 120.930639,13.9120528 L118.087745,11.069477 C117.995106,10.976841 117.845368,10.976841 117.752729,11.069477 C117.66009,11.1621131 117.66009,11.311847 117.752729,11.404483 L120.191425,13.8431088 L105.836928,13.8431088 C105.705907,13.8431088 105.6,13.9490124 105.6,14.0800296 C105.6,14.2110468 105.705907,14.3169504 105.836928,14.3169504 L120.191425,14.3169504 L117.752729,16.7555762 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,349 @@
+@charset "UTF-8";
+/* fonts */
+@font-face {
+    font-family: helvetica,sans-serif;
+    src: url('/Helvetica-Font/helvetica-light-587ebe5a59211.ttf');
+}
+/* variables */
+$font: helvetica, sans-serif;
+
+$color1:#388087;
+$color2: #6FB3B8;
+$color3: #4c4c4c;
+$color4:#f8f8f8;
+$color5:white;
+$color6:#615D5D;
+$color7:#979797;
+$shadow: rgba(76,76,76,0.2);
+
+/* @extend */
+%flex-column {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: $font;
+    color:$color3;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color:$color4;
+    font-size:62.5%;
+}
+
+body {
+    margin:0;
+    @extend %flex-column;
+}
+
+header {
+    width:100%;
+    position:sticky;
+    z-index: 2;
+    top:0;
+    display:flex;
+    height:5rem;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0 1rem;
+    background-color:$color4;
+    a {
+        text-decoration: none;
+        font-size:1.5rem;
+        letter-spacing: .2rem;
+        color:$color1;
+    }
+     nav {   
+     .navCont {
+         display:none;
+     }
+    }
+    }
+
+.navLinks {
+    display:none;
+}
+
+.navCollapse {
+        position:sticky;
+        top:5rem;
+        width:100%;
+        min-height: 10vh;
+        padding:.5rem 0;
+        @extend %flex-column;
+        justify-content:space-between;
+        background-color: $color4;
+        box-shadow:0 6px 4px $shadow;
+        z-index: 2;
+            a {
+                width:fit-content;
+                display:block;
+                padding:2rem .5rem;
+                display:flex;
+                text-align:center;
+                text-decoration:none;
+                color:$color3;
+                font-size:1.5rem;
+            }
+        }
+
+.fixed {
+    box-shadow: $color7 0px 2px 4px;
+}
+
+#home {
+    width:100%;
+    @extend %flex-column;
+    justify-content: space-around;
+    text-align: center;
+    color:$color5;
+    .homeCont {
+        margin: 5rem 0;
+        @extend %flex-column;
+        justify-content: center;
+    h1 {
+        margin:0px;
+        font-size:3rem;
+        width: 100%;
+        font-family:$font;
+        font-weight: lighter;
+        color:$color1;
+
+    }
+    p {
+        width:100%;
+        font-size:1.8rem;
+        margin:1rem 0 4rem 0;
+        color:$color3;
+    }
+    a {
+        display:block;
+        padding:1rem 1.5rem;
+        background-color:$color2;
+        color:$color4;
+        text-decoration: none;
+        font-size:1.2rem;
+        border-radius: 1rem;
+        box-shadow: 0 1px 4px $color7;
+    }
+    a:hover {
+        box-shadow: 0 1px 5px $color3;
+       
+}
+}
+    img {
+        width:25rem;
+        height:auto;
+        margin:5rem 0;
+    }
+    .scroll {
+        width:10rem;
+        @extend %flex-column;
+        margin:1rem 0 5rem 0;
+        p {
+            margin:0;
+        }
+        img {
+            height:1rem;
+            margin:.5rem 0;
+        }
+    }
+}
+
+#resume {
+    width:90%;
+    max-width: 110rem;
+    @extend %flex-column;
+    justify-content: center;
+    margin-top:5rem;
+    color:$color3;
+    border: 1px solid $color7;
+    border-radius: 17.5px;
+    box-shadow: 0 2px 6px $color7;
+    h2 {
+        width:fit-content;
+        padding: 0 .5rem;
+        font-size:2rem;
+        text-align: center;
+        margin: 0 auto;
+        font-weight: lighter;
+        letter-spacing: 2.5px;
+        color:$color1;
+        position: relative;
+        bottom:1.5rem;
+        background-color:$color4;
+        z-index: 1;
+    }
+    .resume {
+        width:80%;
+        p {
+            margin-left:1rem;
+            font-size:1.5rem; 
+            color:$color3;
+        }
+        .resumeEducation {
+            display:flex;
+            flex-direction:column;
+            span {
+                display:inline-block;
+                margin:1rem 0;
+                font-size:1.6rem;
+                font-weight: bold;
+            }
+        }
+    }
+    .skillsCont {
+        border-top: 1px solid $color7;
+        width:80%;
+        @extend %flex-column;
+        margin-bottom:2rem;
+        .skillsHead{
+            color:$color1;
+            font-size:1.8rem;
+            letter-spacing: 1.25px;
+            margin-bottom:2rem;
+            }
+        .skills {
+            width:100%;
+            display:flex;
+            justify-content: space-between;
+            flex-wrap:wrap;
+        p { 
+            font-size:1.5rem;
+            margin:1rem .5rem;
+        }
+       }
+      }
+    }
+
+#projects {
+    width:90%;
+    max-width:110rem;
+    margin: 5rem 0;
+    @extend %flex-column;
+    justify-content: center;
+    color:$color3;
+    border: 1px solid $color7;
+    border-radius: 17.5px;
+    box-shadow: 0 2px 6px $color7;
+        h3 {
+            width:fit-content;
+            padding: 0 .5rem;
+            font-size:2rem;
+            text-align: center;
+            margin:0 auto;
+            font-weight: lighter;
+            letter-spacing: 2.5px;
+            color:$color1;
+            position: relative;
+            bottom:1.5rem;
+            background-color:$color4;
+            z-index: 1;
+        }
+        .projectItem {
+            width:80%;
+            margin-bottom:1rem;
+            @extend %flex-column;
+            a {
+                display:block;
+                img{
+                    width:90%;
+                    max-width:40rem;
+                }
+            }
+            div {
+                display:flex;
+                align-items: center;
+            p {
+                display:flex;
+                flex-direction: column;
+               
+                span {
+                    font-size:1.5rem;
+                    margin-bottom:.5rem;
+                }
+                font-size:1.2rem;
+            }
+        }
+    }
+}
+
+/* Extra small devices (phones, 375px and up) */
+@media only screen and (min-width: 375px) {
+    #home img {
+        width:35rem;
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    header {
+        nav {
+        .navIcon {
+            display:none;
+        }
+        .navCont {
+            width:30rem;
+            margin-right:5rem;
+            display:flex;
+            justify-content:space-between;
+            a {
+            text-decoration: none;
+            font-size:1.3rem;
+            color:$color3;
+            }
+        }
+    }
+}
+
+.navCollapse {
+    display:none;
+}
+
+#home {
+    width:95%;
+    margin:2rem 0 5rem 0;
+    padding:3rem 0;
+    flex-direction: row;
+    .scroll {
+     display:none;
+    }
+    img {
+        width:40rem;
+    }
+}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #projects {
+        .projectItem {
+            flex-direction: row;
+            justify-content: space-between;
+            div {
+                width:60%;
+                margin-left:5rem;
+            }
+        }
+        .projectItem2 {
+            flex-direction:row-reverse;
+            div {
+                margin:0 5rem 0 0;
+            }
+        }
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #home {
+        width:80%;
+    }
+}
